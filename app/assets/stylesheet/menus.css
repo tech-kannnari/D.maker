@@ -1,0 +1,109 @@
+/* index.html.erb */
+
+.header{
+  height: 20vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.button{
+  display: flex;
+}
+
+.login{
+  margin: 20px;
+}
+.logout{
+  margin: 20px;
+}
+.main{
+  height: 60vh;
+  background-color: #f1e5be;
+}
+
+.footer{
+  height: 20vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* new.html.erb */
+
+.menus-add-contents {
+  background-color: #f1e5be;
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 500px;
+}
+
+.menus-add-title {
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menus-add-main{
+  text-align: center;
+  margin: 2vh;
+}
+
+.weight-bold-text {
+  font-weight: bold;
+  font-size: 20px;
+  min-width: 170px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.main-text::placeholder{
+  font-weight: bold;
+}
+.main-text {
+  width: 100%;
+  padding: 16px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+}
+
+.main-genre{
+  margin-bottom: 4vh;
+}
+
+.add-btn-contents {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-comment{
+  margin: 20px;
+  
+}
+
+.add-btn{
+  width: 80px;
+  height: 80px;
+  margin-right: 100px;
+}
+
+.btn-comment{
+  display: flex;
+}
+
+.add-comment{
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 283px;
+}
+.stop-comment{
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 118px;
+}

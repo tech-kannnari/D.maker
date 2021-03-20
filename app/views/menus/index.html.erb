@@ -1,1 +1,47 @@
-<h1>トップ</h1>
+<div class="header">
+  
+  <div class="D.maker">
+    <%= link_to(root_path, class: 'D.maker-btn') do %>
+      <%= image_tag 'logo1.png', size: '200x100', class: "D.maker-btn-icon" %>
+    <% end %>
+  </div>
+
+  <div class="button">
+    <div class="login">
+      <%= link_to("#", class: 'sign_in-btn') do %>
+        <%= image_tag 'login.png', size: '80x80', class: "sign_in-btn-icon" %>
+      <% end %>
+    </div>
+
+    <div class="logout">
+      <%= link_to("#", class: 'logout-btn') do %>
+        <%= image_tag 'logout.png', size: '80x80', class: "logout-btn-icon" %>
+      <% end %>
+    </div>
+  </div>
+
+</div>
+
+<div class="main"></div>
+
+<div class="footer">
+  
+  <div class="cook">
+    <%= link_to("#", class: 'cook-btn') do %>
+      <%= image_tag 'cook.png' , size: '90x90' ,class: "cook-btn-icon" %>
+    <% end%>
+  </div>
+
+  <div class="recipe">
+    <%= link_to("#", class: 'recipe-btn') do %>
+        <%= image_tag 'eat.png', size: '110x110', class: "recipe-btn-icon" %>
+      <% end %>
+  </div>
+  
+  <div class="menus">
+    <%= link_to(new_menu_path, class: 'menus-btn') do %>
+        <%= image_tag 'menus.png', size: '100x100', class: "menus-btn-icon" %>
+      <% end %>
+  </div>
+</div>
+
