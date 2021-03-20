@@ -1,4 +1,5 @@
 class Menu < ApplicationRecord
+  belongs_to :dinner
 
   with_options presence: true do
     validates :main_name

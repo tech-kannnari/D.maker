@@ -65,7 +65,7 @@
 ### Association
 
 - belongs_to :user
-- belongs_to :dinner
+- belongs_to :menu
 
 
 
