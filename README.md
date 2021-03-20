@@ -33,14 +33,14 @@
 | Column       | Type       | Options                       |
 | ------------ | ---------- | ----------------------------- |
 | main_name    | string     | null: false                   |
-| main_recipe  | text       | null: false                   |
-| main_genre   | string     | null: false                   | 
+| main_recipe  | text       |                               |
+| main_genre   | string     |                               | 
 | salad_name   | string     | null: false                   | 
-| salad_recipe | text       | null: false                   | 
-| salad_genre  | string     | null: false                   |
+| salad_recipe | text       |                               | 
+| salad_genre  | string     |                               |
 | soup_name    | string     | null: false                   | 
-| soup_recipe  | text       | null: false                   |  
-| soup_genre   | string     | null: false                   |
+| soup_recipe  | text       |                               |  
+| soup_genre   | string     |                               |
 | user         | references | null: false, foreign_key:true |
 
 
