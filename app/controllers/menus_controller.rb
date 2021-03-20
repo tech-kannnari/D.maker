@@ -4,6 +4,13 @@ class MenusController < ApplicationController
   end
   
   def new
+    @menu = Menu.new
   end
   
-end
+
+
+  private
+
+  def menu_params
+    params.require(:menu).permit(:main_name, :main_recipe, :main_genre, :salad_name, :salad_recipe, :salad_genre, :soup_name, :soup_recipe, :soup_genre)
+  end
