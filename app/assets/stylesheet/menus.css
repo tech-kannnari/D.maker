@@ -44,8 +44,9 @@
 
 .menus-add-title {
   font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
+  margin-bottom: 4vh;
 }
 
 .menus-add-main{
@@ -58,23 +59,30 @@
   font-size: 20px;
   min-width: 170px;
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 2vh;
 }
 
-.main-text::placeholder{
+.form-text::placeholder{
   font-weight: bold;
 }
-.main-text {
+.form-text {
   width: 100%;
   padding: 16px 16px 8px;
   border-radius: 4px;
   border: 1px solid #ccc;
   font-size: 16px;
   resize: none;
+  margin-top: 2vh;
 }
 
 .main-genre{
-  margin-bottom: 4vh;
+  margin-bottom: 12vh;
+}
+.salad-genre{
+  margin-bottom: 12vh;
+}
+.soup-genre{
+  margin-bottom: 8vh;
 }
 
 .add-btn-contents {
@@ -91,6 +99,7 @@
   width: 80px;
   height: 80px;
   margin-right: 100px;
+
 }
 
 .btn-comment{
@@ -107,3 +116,4 @@
   font-weight: bold;
   margin-left: 118px;
 }
+
