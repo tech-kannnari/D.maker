@@ -8,32 +8,76 @@
   <div class="menus-add-main">
     <h2 class="menus-add-title">レシピを追加しよう</h2>
 
-    <%= form_with url:"#", local: true do |f| %>
+    <%= form_with model: @menu, local: true do |f| %>
 
     <div class="new-main">
       <div class="main-name">
         <div class="weight-bold-text">
-          New main dish!
+          New main dish !
         </div>
-        <%= f.text_field :main_name, class:"main-text", id:"item-name", placeholder:"料理名", maxlength:"40" %>
+        <%= f.text_field :main_name, class:"form-text", id:"item-name", placeholder:"料理名", maxlength:"40" %>
       </div>
 
       <div class="main-recipe">
         <div class="weight-bold-text">
-          How to make?
+          How to make ?
         </div>
-        <%= f.text_area :main_recipe, class:"main-text", id:"item-info", placeholder:"作り方" , size:"100x10" %> 
+        <%= f.text_area :main_recipe, class:"form-text", id:"item-info", placeholder:"作り方" , size:"100x10" %> 
       </div>
 
       <div class="main-genre">
         <div class="weight-bold-text">
-          what is the genre?
+          what is the genre ?
         </div>
-        <%= f.text_field :main_genre, class:"main-text", id:"item-name", placeholder:"ジャンル", maxlength:"40" %> 
-      </div>  
+        <%= f.text_field :main_genre, class:"form-text", id:"item-name", placeholder:"ジャンル", maxlength:"40" %> 
+      </div> 
 
+      <div class="new-salad">
+      <div class="salad-name">
+        <div class="weight-bold-text">
+          New salad !
+        </div>
+        <%= f.text_field :salad_name, class:"form-text", id:"item-name", placeholder:"料理名", maxlength:"40" %>
+      </div>
+
+      <div class="salad-recipe">
+        <div class="weight-bold-text">
+          How to make ?
+        </div>
+        <%= f.text_area :salad_recipe, class:"form-text", id:"item-info", placeholder:"作り方" , size:"100x10" %> 
+      </div>
+
+      <div class="salad-genre">
+        <div class="weight-bold-text">
+          what is the genre ?
+        </div>
+        <%= f.text_field :salad_genre, class:"form-text", id:"item-name", placeholder:"ジャンル", maxlength:"40" %> 
+      </div> 
+
+      <div class="new-soup">
+      <div class="soup-name">
+        <div class="weight-bold-text">
+          New soup !
+        </div>
+        <%= f.text_field :soup_name, class:"form-text", id:"item-name", placeholder:"料理名", maxlength:"40" %>
+      </div>
+
+      <div class="soup-recipe">
+        <div class="weight-bold-text">
+          How to make ?
+        </div>
+        <%= f.text_area :soup_recipe, class:"form-text", id:"item-info", placeholder:"作り方" , size:"100x10" %> 
+      </div>
+
+      <div class="soup-genre">
+        <div class="weight-bold-text">
+          what is the genre ?
+        </div>
+        <%= f.text_field :soup_genre, class:"form-text", id:"item-name", placeholder:"ジャンル", maxlength:"40" %> 
+      </div> 
+      
       <div class="add-btn-contents">
-          <%= image_submit_tag "add.png", class: "add-btn"%>
+          <%= image_submit_tag "add.png", class: "add-btn" %>
         <%= link_to(root_path, class: 'stop-btn') do %>
           <%= image_tag 'stop.png', size: '80x80', class: "stop-btn-icon" %>
         <% end %>
@@ -50,9 +94,9 @@
   </div>
   <footer class="menus-add-footer">
     <ul class="footer-comment">
-      <li><a href="#">プライバシーポリシー</a></li>
-      <li><a href="#">利用規約</a></li>
-      <li><a href="#">特定商取引に関する表記</a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
     </ul>
   </footer>
 
