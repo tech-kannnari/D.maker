@@ -37,13 +37,13 @@
 
       <h2 class="menus-add-title">Let's record the dinner !!</h2>
 
-     <%= form_with url:"#", local: true do |f| %>
+     <%= form_with model: @dinner, local: true do |f| %>
 
         <div class="cook-image">
           <div class="cook-weight-bold-text">
             cooking photo
           </div>
-          <%= f.text_area :image, class:"form-text", id:"item-info", placeholder:"作り方" , size:"90x10" %> 
+          <%= f.file_field :image, id:"cook-image" %>
         </div>
 
       <div class="cook-impression">
