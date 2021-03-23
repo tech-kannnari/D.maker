@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2021_03_20_085404) do
 
   create_table "dinners", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.date "cookeday", null: false
+    t.date "cookday", null: false
     t.text "impression"
     t.time "cooktime", null: false
     t.bigint "menu_id", null: false
