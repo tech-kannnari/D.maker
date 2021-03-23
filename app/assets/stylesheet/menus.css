@@ -205,7 +205,7 @@
 }
 
 .cook-image {
-  width:863px
+  width:863px;
 }
 
 .cook-weight-bold-text {
@@ -215,3 +215,13 @@
   margin-top: 2vh;
   width: 863px
 }
+
+.cook-content {
+  margin-top: 6vh;
+}
+.cook-add-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 4vh;
+}
+
