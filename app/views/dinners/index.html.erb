@@ -32,41 +32,49 @@
         </div>
       <% end %>
       </div>
+
       <div class="cook-content">
-      </div>
 
-      <h2 class="menus-add-title">Let's record the dinner !!</h2>
+          <h2 class="cook-add-title">Let's record the dinner !!</h2>
 
-     <%= form_with model: @dinner, local: true do |f| %>
+        <%= form_with model: @dinner, local: true do |f| %>
 
-        <div class="cook-image">
-          <div class="cook-weight-bold-text">
-            cooking photo
+            <div class="cook-image">
+              <div class="cook-weight-bold-text">
+                Cooking photo
+              </div>
+              <%= f.file_field :image, id:"cook-image" %>
+            </div>
+
+          <div class="cook-impression">
+            <div class="cook-weight-bold-text">
+              Impressions of cooking 
+            </div>
+            <%= f.text_area :impression, class:"form-text", id:"cook-info", placeholder:"感想", size:"90x10" %> 
+          </div> 
+          
+          <div class="cook-date">
+            <div class="cook-weight-bold-text">
+              Select to date
+            </div>
+            <%= f.date_field :cookday, class: 'form-date', type: 'date'%>
           </div>
-          <%= f.file_field :image, id:"cook-image" %>
-        </div>
 
-      <div class="cook-impression">
-        <div class="cook-weight-bold-text">
-          Impressions of cooking 
-        </div>
-        <%= f.text_area :impression, class:"form-text", id:"cook-info", placeholder:"感想", size:"90x10" %> 
-      </div> 
+          <div class="cook-btn-contents">
+              <%= image_submit_tag "add.png", size: '80x80', class: "cook-btn" %>
+            <%= link_to(root_path, class: 'stop-btn') do %>
+              <%= image_tag 'stop.png', size: '75x75', class: "stop-btn-icon" %>
+            <% end %>
+          </div>
 
-      <div class="cook-btn-contents">
-          <%= image_submit_tag "cook.png", size: '80x80', class: "cook-btn" %>
-        <%= link_to(root_path, class: 'stop-btn') do %>
-          <%= image_tag 'stop.png', size: '75x75', class: "stop-btn-icon" %>
+          <div class="cook-btn-comment">
+            <div class="cook-comment">record to dinner</div>
+            <div class="cook-stop-comment">quit </div>
+          </div>
+        
+
         <% end %>
       </div>
-
-      <div class="cook-btn-comment">
-        <div class="cook-comment">record to dinner</div>
-        <div class="cook-stop-comment">quit </div>
-      </div>
-
-      <% end %>
-
     </div>
 
     <div class="cook-footer">

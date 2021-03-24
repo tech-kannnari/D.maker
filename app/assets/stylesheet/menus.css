@@ -72,7 +72,7 @@
   font-size: 16px;
   resize: none;
   margin-top: 2vh;
-  width: 868px;
+  width: 830px;
 }
 
 .main-genre{
@@ -202,6 +202,7 @@
 
 .cook-impression {
   width:863px;
+  margin-bottom: 2vh;
 }
 
 .cook-image {
@@ -216,6 +217,10 @@
   width: 863px
 }
 
+.form-date{
+  margin-bottom: 4vh;
+}
+
 .cook-content {
   margin-top: 6vh;
 }
@@ -225,3 +230,45 @@
   margin-bottom: 4vh;
 }
 
+/* dinners new */
+
+.record-contents {
+  background-color: #f1e5be;
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+  
+}
+
+.record-main {  
+  width: 870px;
+  text-align :center;
+
+
+}
+
+.record-images {
+  margin-top: 2vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ .record-sentence {
+   font-size: 26px;
+   
+ }
+
+ .record-footer{
+  height: 20vh;
+  background-color: #f1e5be;
+  display: flex;
+  justify-content: space-around;
+}
+
+.record-date{
+  font-size: 24px;
+}
