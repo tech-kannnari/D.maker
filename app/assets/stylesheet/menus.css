@@ -57,22 +57,22 @@
 .weight-bold-text {
   font-weight: bold;
   font-size: 20px;
-  min-width: 170px;
   margin-bottom: 10px;
   margin-top: 2vh;
+  width: 901px
 }
 
 .form-text::placeholder{
   font-weight: bold;
 }
 .form-text {
-  width: 100%;
   padding: 16px 16px 8px;
   border-radius: 4px;
   border: 1px solid #ccc;
   font-size: 16px;
   resize: none;
   margin-top: 2vh;
+  width: 830px;
 }
 
 .main-genre{
@@ -109,7 +109,7 @@
 .add-comment{
   font-size: 16px;
   font-weight: bold;
-  margin-left: 283px;
+  margin-left: 307px;
 }
 .stop-comment{
   font-size: 16px;
@@ -117,3 +117,158 @@
   margin-left: 118px;
 }
 
+/* dinners index */
+
+.cook-add-contents {
+  background-color: #f1e5be;
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.cook-header {
+  height: 90px;
+  width: 90px;
+
+}
+.cook-btn-contents {
+  width: 100%;
+  text-align: center;
+}
+
+
+.cook-btn{
+  width: 80px;
+  height: 80px;
+  margin-right: 100px;
+
+}
+
+.cook-btn-comment{
+  display: flex;
+}
+
+.cook-comment{
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 279px;
+}
+.cook-stop-comment{
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 108px;
+}
+
+.cook-main{
+  text-align: center;
+  margin: 2vh;
+}
+
+.today-dinner {
+  width: 863px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 2vh;
+}
+
+.today-dinner span {
+  font-size: 30px;
+}
+.cook-recipe {
+  width: 863px;
+  font-size: 20px;
+  
+}
+
+.f-name {
+  padding: 16px 16px 8px;
+  font-size: 16px;
+  margin-top: 2vh;
+
+}
+
+.f-recipe {
+  padding: 16px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+  margin-top: 2vh;
+  background-color: #ffffff;
+}
+
+.cook-impression {
+  width:863px;
+  margin-bottom: 2vh;
+}
+
+.cook-image {
+  width:863px;
+}
+
+.cook-weight-bold-text {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 2vh;
+  width: 863px
+}
+
+.form-date{
+  margin-bottom: 4vh;
+}
+
+.cook-content {
+  margin-top: 6vh;
+}
+.cook-add-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 4vh;
+}
+
+/* dinners new */
+
+.record-contents {
+  background-color: #f1e5be;
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+  
+}
+
+.record-main {  
+  width: 870px;
+  text-align :center;
+
+
+}
+
+.record-images {
+  margin-top: 2vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ .record-sentence {
+   font-size: 26px;
+   
+ }
+
+ .record-footer{
+  height: 20vh;
+  background-color: #f1e5be;
+  display: flex;
+  justify-content: space-around;
+}
+
+.record-date{
+  font-size: 24px;
+}

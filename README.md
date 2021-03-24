@@ -1,16 +1,34 @@
 # README
-料理が得意ではない男性に向け夕食提案アプリD.maker
-もしあなたが誰かのために日常的に夕食を作る機会があった時、すぐに調理を開始できますか？
-料理に慣れていない男性はまずメニューを決めることに時間をとられてしまうと思います。
-このアプリがあれば登録したレシピの中からメイン、サラダ、スープの３項目を選び、あなたに提案してくれます。
-作った夕食の写真を撮影し、記録していきます。作った料理を振り返ることで自分の上達に気づくことができ、料理をすることが楽しくなっていきます。
-また、他のユーザーの投稿をみることであなたの料理の幅を広げることもできます。
 
-このアプリを使って料理上手を目指してみませんか？
+# アプリ名
+D.maker
+# 概要
+・登録した献立をランダム出力する
+・調理完了後の写真を感想と一緒に保存する
+・保存された調理の記録を振り返る。
 
+# 本番環境
+
+# 制作背景
+料理が得意ではない男性に向けた夕食を選んでくれるアプリです。
+家族のために夕食を作る機会があった時、すぐに調理を開始できない問題を解決しようと思いこのアプリを作成しました。
+このアプリがあれば登録したレシピの中からメイン、サラダ、スープの３項目のメニューを提案してくれます。
+完成した夕食の写真を保存し記録していきます。
+作った料理を振り返ることで自分の上達に気づくことができ、料理をすることが楽しくなっていきます。
+<!-- 他のユーザーの投稿をみることであなたの料理の幅を広げることもできます。 -->
 ＊メイン、サラダ、スープの３項目を揃えることができるとバランスの良い夕食に思ってもらえると考えているのでこの３項目出力することにしています。
+# DEMO
 
+# 工夫したポイント
 
+# 開発環境
+Ruby/Ruby on Rails/MySQL/Github/AWS/Visual Studio Code
+
+# 今後実装したい機能
+・調理した日付や調理にかかった時間を画像や感想と一緒に保存する機能の追加
+・ユーザー管理機能の実装
+
+# DB設計
 
 # テーブル設計
 
@@ -33,14 +51,14 @@
 | Column       | Type       | Options                       |
 | ------------ | ---------- | ----------------------------- |
 | main_name    | string     | null: false                   |
-| main_recipe  | text       | null: false                   |
-| main_genre   | string     | null: false                   | 
+| main_recipe  | text       |                               |
+| main_genre   | string     |                               | 
 | salad_name   | string     | null: false                   | 
-| salad_recipe | text       | null: false                   | 
-| salad_genre  | string     | null: false                   |
+| salad_recipe | text       |                               | 
+| salad_genre  | string     |                               |
 | soup_name    | string     | null: false                   | 
-| soup_recipe  | text       | null: false                   |  
-| soup_genre   | string     | null: false                   |
+| soup_recipe  | text       |                               |  
+| soup_genre   | string     |                               |
 | user         | references | null: false, foreign_key:true |
 
 
@@ -54,9 +72,7 @@
 
 | Column     | Type       | Options                       |
 | ---------- | ---------- | ----------------------------- |
-| cookday    | date       | null: false                   |
 | impression | text       |                               |
-| cooktime   | time       | null: false                   |
 | user       | references | null: false, foreign_key:true |
 | menu       | references | null: false, foreign_key:true |
 
@@ -65,7 +81,7 @@
 ### Association
 
 - belongs_to :user
-- belongs_to :dinner
+- belongs_to :menu
 
 
 

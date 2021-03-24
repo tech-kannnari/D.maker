@@ -1,0 +1,39 @@
+ <div class="record-contents">
+    <div class="record-header">
+      <%= link_to(root_path, class: 'record-btn') do %>
+        <%= image_tag 'eat.png' , size: '110x110' ,class: "record-btn-icon" %>
+      <% end%>
+    </div>
+
+    <div class="record-main"> 
+      <div class="record-sentence">
+      今までの料理一覧 ~List of past dishes~
+      </div>
+      <div class="record-lists">
+        <% @dinner.each do |record|%>
+          <div class="record-images">
+            <%= image_tag record.image, class: "record-image", size: '400x400' %>
+          </div>
+          <div class="record-date">
+            <%= record.cookday %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="record-footer">
+      <div class="cook">
+        <%= link_to(dinners_path, class: 'cook-btn') do %>
+          <%= image_tag 'cook.png' , size: '90x90' ,class: "cook-btn-icon" %>
+        <% end%>
+      </div>
+
+
+      
+      <div class="menus">
+        <%= link_to(new_menu_path, class: 'menus-btn') do %>
+            <%= image_tag 'menus.png', size: '90x90', class: "menus-btn-icon" %>
+          <% end %>
+      </div>
+    </div>
+ </div>
