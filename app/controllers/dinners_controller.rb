@@ -13,10 +13,14 @@ class DinnersController < ApplicationController
     end
   end
 
+  def new
+    @dinner = Dinner.all.order('created_at DESC')
+  end
+
   private
 
   def dinner_params
-    params.permit(:image, :impression)
+    params.permit(:image, :impression, :cookday, :menu)
   end
 
 end
