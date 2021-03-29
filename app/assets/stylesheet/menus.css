@@ -1,8 +1,8 @@
 /* index.html.erb */
 
 .header{
-  height: 20vh;
-  background-color: white;
+  height: 16vh;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   
@@ -26,9 +26,37 @@
 .footer{
   height: 20vh;
   background-color: white;
-  display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 4vh;
 }
+
+.three-btn {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin-left: 245px;
+}
+.menus-btn {
+  margin-left: 90px;
+}
+.btn-message {
+  text-align: center;
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+}
+.message-cook {
+  margin-left: 270px;
+}
+.message-record {
+  margin-left: 352px;
+}
+.message-recipe {
+  margin-left: 337px;
+}
+
 
 /* new.html.erb */
 
@@ -246,29 +274,86 @@
 .record-main {  
   width: 870px;
   text-align :center;
-
-
 }
 
 .record-images {
-  margin-top: 2vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: white;
 }
 
  .record-sentence {
    font-size: 26px;
-   
+   margin-bottom: 2vh; 
  }
 
+ .record-list{
+   width: 660px;
+   border: 8px dotted #ccc;
+   border-radius: 4px;
+   padding: 1em ;
+   margin-bottom: 4vh;
+   margin-left: 105px;
+ }
+ .record-date{
+   margin-top: 2vh;
+ }
  .record-footer{
-  height: 20vh;
+  width: 680px;
   background-color: #f1e5be;
-  display: flex;
-  justify-content: space-around;
+  text-align: center;
+
 }
 
 .record-date{
   font-size: 24px;
+}
+
+.back-btn{
+  margin-top: 3vh;
+}
+
+/* show.html.erb */
+
+.show-content {
+  background-color: #f1e5be;
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+
+}
+
+.show-header {
+  margin-top: 2vh;
+}
+
+.show-main {
+  text-align: center;
+  font-size: 24px;
+  
+}
+
+.show-date {
+  margin: 2vh;
+}
+
+.impression-sentence {
+  margin: 2vh;
+  margin-bottom: 2vh;
+}
+
+.show-impression {
+  font-size: 17px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  max-width: 870px;
+}
+
+.back-message {
+  margin-bottom: 8vh;
+  font-size: 16px;
 }

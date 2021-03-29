@@ -11,29 +11,29 @@
       </div>
       <div class="record-lists">
         <% @dinner.each do |record|%>
-          <div class="record-images">
-            <%= image_tag record.image, class: "record-image", size: '400x400' %>
-          </div>
-          <div class="record-date">
-            <%= record.cookday %>
+          <div class="record-list">
+            <div class="record-images">
+              <%= link_to image_tag(record.image, class: :card_img, size: '400x400'), dinner_path(record.id) %>
+            </div>
+            <div class="record-date">
+           Date of cooking 【
+              <%= record.cookday %> 】
+            </div>
           </div>
         <% end %>
       </div>
     </div>
 
     <div class="record-footer">
-      <div class="cook">
-        <%= link_to(dinners_path, class: 'cook-btn') do %>
-          <%= image_tag 'cook.png' , size: '90x90' ,class: "cook-btn-icon" %>
-        <% end%>
-      </div>
 
-
-      
-      <div class="menus">
-        <%= link_to(new_menu_path, class: 'menus-btn') do %>
-            <%= image_tag 'menus.png', size: '90x90', class: "menus-btn-icon" %>
+      <div class="back-btn">
+          <%= link_to(root_path, class: 'recipe-btn') do %>
+            <%= image_tag 'back.png', size: '80x80', class: "recipe-btn-icon" %>
           <% end %>
       </div>
+      <div class="back-message">
+        Back to previous
+      </div>
+
     </div>
  </div>

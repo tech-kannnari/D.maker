@@ -7,6 +7,7 @@ class DinnersController < ApplicationController
     @random = Menu.order("RAND()").limit(1)
     @dinner = Dinner.new(dinner_params)
     if @dinner.save
+      
       redirect_to root_path
     else
       render :index
@@ -17,10 +18,13 @@ class DinnersController < ApplicationController
     @dinner = Dinner.all.order('created_at DESC')
   end
 
+  def show
+    @dinner = Dinner.find(params[:id])
+  end
   private
 
   def dinner_params
-    params.permit(:image, :impression, :cookday, :menu)
+    params.permit(:image, :impression, :cookday, :menu_id)
   end
 
 end
