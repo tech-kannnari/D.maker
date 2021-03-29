@@ -26,7 +26,7 @@ herokuデプロイの予定
 履歴の詳細
 ![image](https://user-images.githubusercontent.com/78346587/112436877-9f71bf80-8d89-11eb-84a2-986621d73bc2.png)
 
-
+[![Image from Gyazo](https://i.gyazo.com/b33931c4c4fdec7bc2129c7438f848a9.gif)](https://gyazo.com/b33931c4c4fdec7bc2129c7438f848a9)
 # 工夫したポイント
 ・全体の雰囲気を統一し、見やすいレイアウトを心がけました  
 ・アイコンにリンクをつけることで画面遷移を簡単にしました
