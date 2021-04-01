@@ -1,15 +1,23 @@
 /* index.html.erb */
 
 .header{
-  height: 16vh;
+  height: 100px;
   background-color: #ffffff;
+  
+}
+.Dmaker{
+  height: 100px;
+}
+.header-main {
   display: flex;
   justify-content: space-between;
-  
 }
 
 .button{
   display: flex;
+}
+.registration {
+  margin: 20px;
 }
 
 .login{
@@ -18,8 +26,25 @@
 .logout{
   margin: 20px;
 }
+
+.btn-name {
+  display: flex;
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.btn-sign-up {
+  margin-left: 1095px;
+}
+.btn-log-in {
+  margin-left: 65px;
+}
+.btn-log-out {
+  margin-left: 42px;
+}
 .main{
-  height: 60vh;
+  margin-top: 8vh;
+  height: 54vh;
   background-color: #f1e5be;
 }
 
@@ -356,4 +381,101 @@
 .back-message {
   margin-bottom: 8vh;
   font-size: 16px;
+}
+
+/* registrations new */
+
+.sign-up-main{
+  background-color: #f1e5be;
+}
+
+.registration-header {
+  padding: 2vh 0 ;
+  margin-bottom: 2vh;
+}
+
+.sign-up-main{
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.field {
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2vh;
+}
+.sign-form {
+  font-weight: normal;
+  width: 50vh;
+  padding: 8px;
+  font-size: 17px;
+}
+.actions {
+  margin-top: 4vh;
+}
+.sign-btn-comment{
+  display: flex;
+}
+.sign-up-comment {
+  margin-left: 580px;
+}
+.sign-stop-comment {
+  margin-left: 120px;
+}
+
+.log-in-btn-comment {
+  margin-left: 18px;
+}
+
+/* sessions new */
+
+.session-main{
+  background-color: #f1e5be;
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  min-height: 100vh;
+}
+.session-header {
+  padding: 2vh 0 ;
+  margin-bottom: 6vh;
+}
+
+.log-btn-comment{
+  display: flex;
+}
+.log-in-comment {
+  margin-left: 593px;
+}
+.log-stop-comment {
+  margin-left: 126px;
+  margin-bottom: 4vh;
+}
+
+.sign-up-btn-comment {
+  margin-left: 1px;
+}
+.session-actions {
+  margin-top: 10vh;
+}
+
+.submit {
+  background-color: #f1e5be;
+  
+}
+
+.no-record-message {
+  margin-top: 14vh;
+  margin-bottom: 14vh;
+  font-size: 30px;
+}
+
+.no-record-message span {
+  color: red;
 }

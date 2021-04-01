@@ -21,6 +21,7 @@ class DinnersController < ApplicationController
   def show
     @dinner = Dinner.find(params[:id])
   end
+  
   private
 
   def dinner_params
