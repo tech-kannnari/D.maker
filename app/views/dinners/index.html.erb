@@ -9,7 +9,9 @@
       <div class="cook-recipe">Today's dinner!!
       <% @random.each do |menu| %>
         <div class="today-dinner">
-          <span><%= menu.main_name %></span>＋<span><%= menu.salad_name %></span>＋<span><%= menu.soup_name %></span>
+          <span><%= menu.main_name %></span>＋
+          <span><%= menu.salad_name %></span>＋
+          <span><%= menu.soup_name %></span>
         </div>
         <div class="f-name">
           〜<%= menu.main_name %>の作り方〜
