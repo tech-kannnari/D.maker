@@ -1,4 +1,6 @@
 class DinnersController < ApplicationController
+  before_action :authenticate_user!, only: [:index, :new, :create, :show]
+
   def index
     @random = Menu.order("RAND()").limit(1)
   end
@@ -25,7 +27,7 @@ class DinnersController < ApplicationController
   private
 
   def dinner_params
-    params.permit(:image, :impression, :cookday, :menu_id)
+    params.permit(:image, :impression, :cookday)
   end
 
 end

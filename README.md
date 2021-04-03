@@ -73,7 +73,6 @@ Ruby/Ruby on Rails/MySQL/Github/AWS/Visual Studio Code
 ### Association
 
 - belongs_to : user
-- belongs_to : dinner
 
 
 ## dinners テーブル
@@ -82,14 +81,12 @@ Ruby/Ruby on Rails/MySQL/Github/AWS/Visual Studio Code
 | ---------- | ---------- | ----------------------------- |
 | impression | text       |                               |
 | user       | references | null: false, foreign_key:true |
-| menu       | references | null: false, foreign_key:true |
 
 //imageはActiveStorageで実装
 
 ### Association
 
 - belongs_to :user
-- belongs_to :menu
 
 
 

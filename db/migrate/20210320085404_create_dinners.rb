@@ -4,6 +4,7 @@ class CreateDinners < ActiveRecord::Migration[6.0]
       t.text       :impression  
       t.date       :cookday,    null:false
       t.references :menu,       foreign_key:true
+      
       t.timestamps
     end
   end
