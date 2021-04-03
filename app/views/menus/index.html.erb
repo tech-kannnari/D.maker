@@ -7,6 +7,20 @@
     </div>
 
     <div class="button">
+      <div class="log-message">
+      current status
+        <% if flash[:notice] %>
+          <div class="notice">
+            <%= flash[:notice] %>
+          </div>
+        <% end %>
+      </div>
+      <div class="guest-user">
+        <%= link_to(menus_guest_sign_in_path, method: :post, class: 'sign_in-btn') do %>
+          <%= image_tag 'user.png', size: '80x80', class: "guest-user-btn-icon" %>
+        <% end %>
+      </div>
+
       <div class="registration">
         <%= link_to(new_user_registration_path, class: 'sign_in-btn') do %>
           <%= image_tag 'new.png', size: '80x80', class: "registration-btn-icon" %>
@@ -28,6 +42,9 @@
 
   </div>
   <div class="btn-name">
+    <div class="btn-guest">
+      guest
+    </div>
     <div class="btn-sign-up">
       sign-up
     </div>
@@ -40,26 +57,81 @@
   </div>
 </div>
 
-<div class="main"></div>
+<div class="main">
+  <% if Dinner.exists? %>
+    <div class="swiper-main">
+      <section class="swiper-container">
+        <div class="swiper-wrapper">
+          <% @dinner.each do |dinner| %>
+            <%= image_tag dinner.image, class:"swiper-slide" %>
+          <% end %>
+        </div>
+
+        <div class="swiper-pagination swiper-pagination-black"></div>
+
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+      </section>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="/javascipt/main.js"></script>
+    </div>
+  <% else %>
+    <div class="swiper-main">
+      <section class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="assets/syokuji1.jpeg"></div>
+          <div class="swiper-slide"><img src="assets/syokuji2.jpeg"></div>
+          <div class="swiper-slide"><img src="assets/syokuji3.jpeg"></div>
+          <div class="swiper-slide"><img src="assets/syokuji4.jpeg"></div>
+        </div>
+
+        <div class="swiper-pagination swiper-pagination-black"></div>
+
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+      </section>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="/javascipt/main.js"></script>
+    </div>
+  <% end %>
+</div>
 
 <div class="footer">
   <div class="three-btn">
     <div class="cook">
-      <%= link_to(dinners_path, class: 'cook-btn') do %>
-        <%= image_tag 'cook.png' , size: '100x100' ,class: "cook-btn-icon" %>
-      <% end%>
+      <% if user_signed_in? %>
+        <%= link_to(dinners_path, class: 'cook-btn') do %>
+          <%= image_tag 'cook.png' , size: '100x100' ,class: "cook-btn-icon" %>
+        <% end %>
+      <% else %>
+        <%= link_to(new_user_session_path, class: 'cook-btn') do %>
+          <%= image_tag 'cook.png' , size: '100x100' ,class: "cook-btn-icon" %>
+        <% end %>
+      <% end %>
     </div>
 
     <div class="recipe">
-      <%= link_to(new_dinner_path, class: 'recipe-btn') do %>
+      <% if user_signed_in? %>
+        <%= link_to(new_dinner_path, class: 'recipe-btn') do %>
           <%= image_tag 'eat.png', size: '110x110', class: "recipe-btn-icon" %>
         <% end %>
+      <% else %>
+        <%= link_to(new_user_session_path, class: 'recipe-btn') do %>
+          <%= image_tag 'eat.png', size: '110x110', class: "recipe-btn-icon" %>
+        <% end %>
+      <% end%>
     </div>
     
     <div class="menus">
-      <%= link_to(new_menu_path, class: 'menus-btn') do %>
+      <% if user_signed_in? %>
+        <%= link_to(new_menu_path, class: 'menus-btn') do %>
           <%= image_tag 'menus.png', size: '100x100', class: "menus-btn-icon" %>
         <% end %>
+      <% else %>
+        <%= link_to(new_user_session_path, class: 'menus-btn') do %>
+          <%= image_tag 'menus.png', size: '100x100', class: "menus-btn-icon" %>
+        <% end %>
+      <% end %>
     </div>
   </div>
   <div class="btn-message">

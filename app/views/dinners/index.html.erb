@@ -6,6 +6,7 @@
     </div>
 
     <div class="cook-main">
+    <% if Menu.exists? %>
       <div class="cook-recipe">Today's dinner!!
       <% @random.each do |menu| %>
         <div class="today-dinner">
@@ -34,7 +35,7 @@
         </div>
       <% end %>
       </div>
-
+      
       <div class="cook-content">
 
           <h2 class="cook-add-title">Let's record the dinner !!</h2>
@@ -73,10 +74,23 @@
             <div class="cook-comment">record to dinner</div>
             <div class="cook-stop-comment">quit </div>
           </div>
-        
-
         <% end %>
       </div>
+      <% else %>
+        <div class="else-message">
+          まずはレシピを<span>追加</span>してみよう！！
+        </div>
+        <div class="show-footer">
+          <div class="back-btn">
+            <%= link_to(root_path, class: 'recipe-btn') do %>
+              <%= image_tag 'back.png', size: '80x80', class: "recipe-btn-icon" %>
+            <% end %>
+          </div>
+          <div class="back-message">
+            Back to previous
+          </div>
+      </div>
+      <% end %>
     </div>
 
     <div class="cook-footer">
