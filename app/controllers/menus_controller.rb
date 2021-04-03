@@ -1,6 +1,9 @@
 class MenusController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :create]
+
 
   def index
+    @dinner = Dinner.all.order("RAND()").limit(6)
   end
   
   def new
@@ -14,6 +17,14 @@ class MenusController < ApplicationController
     else
       render:new
     end
+  end
+
+  def new_guest
+    user = User.find_or_create_by(email: 'guest@example.com') do |user|
+      user.password = SecureRandom.urlsafe_base64
+    end
+    sign_in user
+    redirect_to root_path, notice: 'Signed in successfully'
   end
 
 
