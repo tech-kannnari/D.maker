@@ -16,6 +16,18 @@
 .button{
   display: flex;
 }
+.log-message{
+  font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  height: 40px;
+  width: 430px;
+  text-align: center;
+}
+.guest-user{
+  margin: 20px
+}
 .registration {
   margin: 20px;
 }
@@ -33,19 +45,35 @@
   font-size: 20px;
   font-weight: bold;
 }
+.btn-guest {
+  margin-left: 995px;
+}
 .btn-sign-up {
-  margin-left: 1095px;
+  margin-left: 58px;
 }
 .btn-log-in {
-  margin-left: 65px;
+  margin-left: 63px;
 }
 .btn-log-out {
   margin-left: 42px;
 }
 .main{
   margin-top: 8vh;
-  height: 54vh;
+  height: 56vh;
   background-color: #f1e5be;
+}
+
+.swiper-container {
+  width: 470px;
+  height: 370px;
+  border: 10px double rgb(177, 168, 151);
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
 }
 
 .footer{
@@ -60,7 +88,7 @@
   display: flex;
   justify-content: space-between;
   max-width: 900px;
-  margin-left: 245px;
+  margin-left: 265px;
 }
 .menus-btn {
   margin-left: 90px;
@@ -73,7 +101,7 @@
   display: flex;
 }
 .message-cook {
-  margin-left: 270px;
+  margin-left: 290px;
 }
 .message-record {
   margin-left: 352px;
@@ -339,6 +367,14 @@
   margin-top: 3vh;
 }
 
+.else-message{
+  font-size: 32px;
+  height: 50vh;
+  margin-top: 10vh
+}
+.else-message span{
+  color: red;
+}
 /* show.html.erb */
 
 .show-content {
@@ -429,6 +465,9 @@
 
 .log-in-btn-comment {
   margin-left: 18px;
+}
+.log-in-btn {
+  height: 140px;
 }
 
 /* sessions new */
